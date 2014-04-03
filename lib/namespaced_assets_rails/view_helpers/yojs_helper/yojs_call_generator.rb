@@ -1,22 +1,24 @@
 module NamespacedAssetsRails
-  module ViewHelpers
+  module Helpers
     module YojsHelper
       class YojsCallGenerator
-        def initialize(controller, action, options = {})
+        def initialize(main_namespace = "", last_namespace = "", options = {})
           @options = merge_options_with_defaults(options)
-          @parent_namespace = "#{@options[:app_name]}.#{controller.parameterize('.')}"
-          @last_namespace = action.parameterize(".")
-          @fullnamespace = "#{@parent_namespace}.#{@last_namespace}"
+          @parent_namespace = "#{@options[:app_name].to_s}.#{main_namespace.parameterize('.')}"
+          @last_namespace = last_namespace.parameterize(".")
+
+          if last_namespace.blank?
+            @fullnamespace = "#{@parent_namespace}"
+          else
+            @fullnamespace = "#{@parent_namespace}.#{@last_namespace}"
+          end
 
         end
 
         def merge_options_with_defaults(options)
           default_options = { :app_name => "",
             :onload_method_name => "",
-            :method_names_mapper => {
-              :create => :new,
-              :update => :edit
-            }
+            :method_names_mapper => {}
           }
           mapping_options = options.delete(:method_names_mapper)
           default_options[:method_names_mapper].merge!(mapping_options) unless mapping_options.nil?

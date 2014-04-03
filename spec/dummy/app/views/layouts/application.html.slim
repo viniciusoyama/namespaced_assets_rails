@@ -2,7 +2,9 @@
 html
   head
     title Dummy
+    = javascript_include_tag("init")
 
   body
     = yield
     = namespaced_javascript_calls()
+    = initialize_namespaced_css_classes

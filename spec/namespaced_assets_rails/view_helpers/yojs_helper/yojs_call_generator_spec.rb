@@ -1,8 +1,8 @@
 # encoding: utf-8
 require 'spec_helper'
 
-describe NamespacedAssetsRails::ViewHelpers::YojsHelper::YojsCallGenerator do
-  subject { NamespacedAssetsRails::ViewHelpers::YojsHelper::YojsCallGenerator.new("ns2", "ns3", {:app_name => "ns1"}) }
+describe NamespacedAssetsRails::Helpers::YojsHelper::YojsCallGenerator do
+  subject { NamespacedAssetsRails::Helpers::YojsHelper::YojsCallGenerator.new("ns2", "ns3", {:app_name => "ns1"}) }
   describe "generate_yojs_calls" do
     specify do
       namespaces_array = ["ns1", "ns1.ns2", "ns1.ns2.ns3"]
@@ -21,9 +21,9 @@ describe NamespacedAssetsRails::ViewHelpers::YojsHelper::YojsCallGenerator do
     specify { expect(subject.get_all_namespaces_from_full_namespace).to be == %w(ns1 ns1.ns2 ns1.ns2.ns3)}
 
     it "should return mapped ns names" do
-      generator = NamespacedAssetsRails::ViewHelpers::YojsHelper::YojsCallGenerator.new("ns2", "create", {:app_name => "ns1", :method_names_mapper => {:create => "novo"}})
+      generator = NamespacedAssetsRails::Helpers::YojsHelper::YojsCallGenerator.new("ns2", "create", {:app_name => "ns1", :method_names_mapper => {:create => "novo"}})
       generator.get_all_namespaces_from_full_namespace().should be == %w(ns1 ns1.ns2 ns1.ns2.create ns1.ns2.novo)
-      generator = NamespacedAssetsRails::ViewHelpers::YojsHelper::YojsCallGenerator.new("ns2", "edit", {:app_name => "ns1", :method_names_mapper => {:create => "novo"}})
+      generator = NamespacedAssetsRails::Helpers::YojsHelper::YojsCallGenerator.new("ns2", "edit", {:app_name => "ns1", :method_names_mapper => {:create => "novo"}})
       generator.get_all_namespaces_from_full_namespace().should be == %w(ns1 ns1.ns2 ns1.ns2.edit)
 
     end
