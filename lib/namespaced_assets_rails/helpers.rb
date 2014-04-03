@@ -1,9 +1,7 @@
 require "namespaced_assets_rails/view_helpers/yojs_helper"
 
 module NamespacedAssetsRails
-  module ViewHelpers
-    include NamespacedAssetsRails::ViewHelpers::YojsHelper
-
+  module Helpers
     def javascript_ready(&block)
       javascript_tag("$(function(){\n" + capture(&block) + "});").html_safe
     end
@@ -16,6 +14,10 @@ module NamespacedAssetsRails
       else
         File.basename(layout.identifier).split('.').first
       end
+    end
+
+    def namespaced_javascript_calls
+      @view_renderer.get_logged_view_paths
     end
 
     def classes_for_scoped_css
