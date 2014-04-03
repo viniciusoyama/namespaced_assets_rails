@@ -1,7 +1,7 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'namespaced_assets_rails/version'
+$:.push File.expand_path("../lib", __FILE__)
+
+# Maintain your gem's version:
+require "namespaced_assets_rails/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "namespaced_assets_rails"
@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/codus/codus"
   spec.license       = "MIT"
 
-  s.test_files = Dir["spec/**/*"]
-  s.files = Dir["{app,config,db,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  spec.test_files = Dir["spec/**/*"]
+  spec.files = Dir["{app,config,db,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 4.1.0"
+  spec.add_dependency "rails", "~> 4.1.0.rc2"
 end
