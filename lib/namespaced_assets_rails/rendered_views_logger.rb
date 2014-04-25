@@ -11,21 +11,21 @@ module NamespacedAssetsRails
     end
 
     def self.insert_new_event_log(payload)
-      RequestStore.store[:rendered_views_logged_views] ||= []
+      RequestStore.store[:logged_views] ||= []
       if payload.has_key?(:virtual_path)
-        RequestStore.store[:rendered_views_logged_views] << payload[:virtual_path]
+        RequestStore.store[:logged_views] << payload[:virtual_path]
       else
         # the last logged path was the rendered view
-        RequestStore.store[:rendered_views_rendered_view_for_action] = RequestStore.store[:rendered_views_logged_views].last
+        RequestStore.store[:rendered_view_name] = payload.inspect
       end
     end
 
     def self.get_logged_views_paths
-      RequestStore.store[:rendered_views_logged_views].uniq
+      RequestStore.store[:logged_views].uniq
     end
 
     def self.get_rendered_view_name
-      RequestStore.store[:rendered_views_rendered_view_for_action].split("/").last
+      RequestStore.store[:rendered_view_name]
     end
   end
 end
