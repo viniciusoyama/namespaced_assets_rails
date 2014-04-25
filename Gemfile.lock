@@ -125,6 +125,7 @@ DEPENDENCIES
   debugger
   jquery-rails
   namespaced_assets_rails!
+  request_store (= 1.0.5)
   rspec (= 3.0.0.beta2)
   slim-rails
   sqlite3

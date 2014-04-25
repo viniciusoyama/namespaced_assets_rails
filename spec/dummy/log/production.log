@@ -1,0 +1,33 @@
+I, [2014-04-04T16:14:07.153496 #48459]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-04-04 16:14:07 -0300
+I, [2014-04-04T16:14:07.157622 #48459]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2014-04-04T16:14:07.176908 #48459]  INFO -- :   Rendered application/_text/_my_partial.html.slim (1.9ms)
+I, [2014-04-04T16:14:07.177028 #48459]  INFO -- :   Rendered application/index.html.slim within layouts/application (17.6ms)
+I, [2014-04-04T16:14:07.279222 #48459]  INFO -- :   Rendered application/_text/_my_partial.html.slim (0.0ms)
+I, [2014-04-04T16:14:07.279343 #48459]  INFO -- :   Rendered application/index.html.slim within layouts/application (0.3ms)
+I, [2014-04-04T16:14:07.280798 #48459]  INFO -- : Completed 200 OK in 123ms (Views: 122.8ms | ActiveRecord: 0.0ms)
+I, [2014-04-04T16:14:09.315583 #48459]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-04-04 16:14:09 -0300
+I, [2014-04-04T16:14:09.316759 #48459]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2014-04-04T16:14:09.317764 #48459]  INFO -- :   Rendered application/_text/_my_partial.html.slim (0.0ms)
+I, [2014-04-04T16:14:09.317933 #48459]  INFO -- :   Rendered application/index.html.slim within layouts/application (0.4ms)
+I, [2014-04-04T16:14:09.320293 #48459]  INFO -- :   Rendered application/_text/_my_partial.html.slim (0.0ms)
+I, [2014-04-04T16:14:09.320507 #48459]  INFO -- :   Rendered application/index.html.slim within layouts/application (0.4ms)
+I, [2014-04-04T16:14:09.322007 #48459]  INFO -- : Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+I, [2014-04-04T16:25:19.957607 #48459]  INFO -- : Started GET "/admin/users" for 127.0.0.1 at 2014-04-04 16:25:19 -0300
+I, [2014-04-04T16:25:19.963930 #48459]  INFO -- : Processing by Admin::UsersController#index as HTML
+I, [2014-04-04T16:25:19.968564 #48459]  INFO -- :   Rendered admin/users/index.html.slim within layouts/application (2.3ms)
+I, [2014-04-04T16:25:19.970187 #48459]  INFO -- :   Rendered admin/users/index.html.slim within layouts/application (0.0ms)
+I, [2014-04-04T16:25:19.971608 #48459]  INFO -- : Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+I, [2014-04-04T16:25:24.721805 #48459]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-04-04 16:25:24 -0300
+I, [2014-04-04T16:25:24.722814 #48459]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2014-04-04T16:25:24.723655 #48459]  INFO -- :   Rendered application/_text/_my_partial.html.slim (0.1ms)
+I, [2014-04-04T16:25:24.723778 #48459]  INFO -- :   Rendered application/index.html.slim within layouts/application (0.4ms)
+I, [2014-04-04T16:25:24.726036 #48459]  INFO -- :   Rendered application/_text/_my_partial.html.slim (0.0ms)
+I, [2014-04-04T16:25:24.726147 #48459]  INFO -- :   Rendered application/index.html.slim within layouts/application (0.2ms)
+I, [2014-04-04T16:25:24.728489 #48459]  INFO -- : Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+I, [2014-04-04T16:25:26.842452 #48459]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-04-04 16:25:26 -0300
+I, [2014-04-04T16:25:26.843123 #48459]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2014-04-04T16:25:26.843674 #48459]  INFO -- :   Rendered application/_text/_my_partial.html.slim (0.0ms)
+I, [2014-04-04T16:25:26.843791 #48459]  INFO -- :   Rendered application/index.html.slim within layouts/application (0.3ms)
+I, [2014-04-04T16:25:26.845592 #48459]  INFO -- :   Rendered application/_text/_my_partial.html.slim (0.0ms)
+I, [2014-04-04T16:25:26.845709 #48459]  INFO -- :   Rendered application/index.html.slim within layouts/application (0.2ms)
+I, [2014-04-04T16:25:26.847179 #48459]  INFO -- : Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
