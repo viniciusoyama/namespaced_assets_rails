@@ -10,6 +10,7 @@ module NamespacedAssetsRails
       }.merge(options)
       full_namespaces_to_call = []
       full_namespaces_to_call << "#{options[:root_namespace_name]}.#{params[:controller].parameterize('.')}.#{params[:action]}"
+      full_namespaces_to_call << "#{options[:root_namespace_name]}.#{params[:controller].parameterize('.')}.#{RenderedViewsLogger.get_rendered_view_name}"
       RenderedViewsLogger.get_logged_views_paths.each do |views_path|
         full_namespaces_to_call << "#{options[:root_namespace_name]}.#{views_path.parameterize('.')}"
       end

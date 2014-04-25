@@ -5121,3 +5121,141 @@ Processing by ApplicationController#index as HTML
   Rendered application/index.html.slim within layouts/application (6.2ms)
   Rendered application/_text/_my_partial2.html.slim (0.1ms)
 Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 15:41:36 -0300
+Processing by ApplicationController#index as HTML
+  Rendered application/_text/_my_partial.html.slim (2.3ms)
+  Rendered application/_text/_my_partial.html.slim (0.1ms)
+  Rendered admin/users/index.html.slim (9.0ms)
+  Rendered application/index.html.slim within layouts/application (27.6ms)
+  Rendered application/_text/_my_partial2.html.slim (2.0ms)
+Completed 200 OK in 154ms (Views: 153.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 15:41:37 -0300
+Processing by ApplicationController#index as HTML
+  Rendered application/_text/_my_partial.html.slim (0.1ms)
+  Rendered application/_text/_my_partial.html.slim (0.0ms)
+  Rendered admin/users/index.html.slim (1.4ms)
+  Rendered application/index.html.slim within layouts/application (2.0ms)
+  Rendered application/_text/_my_partial2.html.slim (0.0ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 15:41:40 -0300
+Processing by ApplicationController#index as HTML
+  Rendered application/_text/_my_partial.html.slim (0.0ms)
+  Rendered application/_text/_my_partial.html.slim (0.0ms)
+  Rendered admin/users/index.html.slim (1.4ms)
+  Rendered application/index.html.slim within layouts/application (2.0ms)
+  Rendered application/_text/_my_partial2.html.slim (0.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 15:41:41 -0300
+Processing by ApplicationController#index as HTML
+  Rendered application/_text/_my_partial.html.slim (0.0ms)
+  Rendered application/_text/_my_partial.html.slim (0.0ms)
+  Rendered admin/users/index.html.slim (1.4ms)
+  Rendered application/index.html.slim within layouts/application (2.0ms)
+  Rendered application/_text/_my_partial2.html.slim (0.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 15:42:01 -0300
+Processing by ApplicationController#index as HTML
+  Rendered application/_text/_my_partial.html.slim (0.0ms)
+  Rendered application/_text/_my_partial.html.slim (0.0ms)
+  Rendered admin/users/index.html.slim (1.3ms)
+  Rendered application/index.html.slim within layouts/application (1.9ms)
+  Rendered application/_text/_my_partial2.html.slim (0.0ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 15:42:08 -0300
+Processing by ApplicationController#index as HTML
+  Rendered application/_text/_my_partial.html.slim (2.1ms)
+  Rendered application/_text/_my_partial.html.slim (0.0ms)
+  Rendered admin/users/index.html.slim (7.8ms)
+  Rendered application/index.html.slim within layouts/application (24.2ms)
+  Rendered application/_text/_my_partial2.html.slim (2.3ms)
+Completed 200 OK in 139ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 15:42:25 -0300
+Processing by ApplicationController#index as HTML
+  Rendered application/_text/_my_partial.html.slim (2.1ms)
+  Rendered application/_text/_my_partial.html.slim (0.0ms)
+  Rendered admin/users/index.html.slim (7.8ms)
+  Rendered application/index.html.slim within layouts/application (58334.8ms)
+  Rendered application/_text/_my_partial2.html.slim (3.5ms)
+Completed 200 OK in 59843ms (Views: 59842.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 15:43:37 -0300
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.slim within layouts/application (4.7ms)
+  Rendered application/_text/_my_partial2.html.slim (0.2ms)
+Completed 200 OK in 2844ms (Views: 2843.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 15:44:45 -0300
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.slim within layouts/application (13.6ms)
+  Rendered application/_text/_my_partial2.html.slim (2.1ms)
+Completed 200 OK in 132ms (Views: 131.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/users/3/edit" for 127.0.0.1 at 2014-04-25 15:44:53 -0300
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendered admin/users/_form.html.slim (18.2ms)
+  Rendered admin/users/edit.html.slim within layouts/application (20.8ms)
+  Rendered application/_text/_my_partial2.html.slim (0.1ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 15:44:53 -0300
+
+
+Started GET "/assets/yojs.js?body=1" for 127.0.0.1 at 2014-04-25 15:44:53 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-04-25 15:44:53 -0300
+
+
+Started GET "/admin/users/3/edit" for 127.0.0.1 at 2014-04-25 15:44:58 -0300
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendered admin/users/_form.html.slim (0.8ms)
+  Rendered admin/users/edit.html.slim within layouts/application (1.4ms)
+  Rendered application/_text/_my_partial2.html.slim (0.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/admin/users/3" for 127.0.0.1 at 2014-04-25 15:44:59 -0300
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J+JAy6U74NygaAeSpO60lCs24xLmsmeKn2I2rnr5qY0=", "id"=>"3"}
+  Rendered admin/users/_form.html.slim (0.5ms)
+  Rendered admin/users/edit.html.slim within layouts/application (1.1ms)
+  Rendered application/_text/_my_partial2.html.slim (0.0ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/yojs.js?body=1" for 127.0.0.1 at 2014-04-25 15:44:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 15:44:59 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-04-25 15:44:59 -0300
+
+
+Started PUT "/admin/users/3" for 127.0.0.1 at 2014-04-25 15:45:46 -0300
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J+JAy6U74NygaAeSpO60lCs24xLmsmeKn2I2rnr5qY0=", "id"=>"3"}
+  Rendered admin/users/_form.html.slim (5.1ms)
+  Rendered admin/users/edit.html.slim within layouts/application (26.5ms)
+  Rendered application/_text/_my_partial2.html.slim (2.2ms)
+Completed 200 OK in 156ms (Views: 145.3ms | ActiveRecord: 0.0ms)

@@ -15,8 +15,8 @@ module NamespacedAssetsRails
       if payload.has_key?(:virtual_path)
         RequestStore.store[:logged_views] << payload[:virtual_path]
       else
-        # the last logged path was the rendered view
-        RequestStore.store[:rendered_view_name] = payload.inspect
+        # last logged view was the view for action
+        RequestStore.store[:rendered_view_name] = RequestStore.store[:logged_views].pop.split('/').last
       end
     end
 
