@@ -11,6 +11,7 @@ module ActionView
 
       def initialize
         super
+        puts "looo"
         self.logged_namespaces = []
         self.logged_rendered_template_path = ""
         self.logged_partials_paths = []
